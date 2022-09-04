@@ -1,0 +1,30 @@
+{
+  "type": "module",
+  "name": "tgbotdeploy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  },
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "dotenv": "^16.0.2",
+    "telegraf": "^4.8.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Egor4ek-debug/Bot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Egor4ek-debug/Bot/issues"
+  },
+  "homepage": "https://github.com/Egor4ek-debug/Bot#readme",
+  "description": ""
+}
