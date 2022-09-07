@@ -3,8 +3,8 @@ import { exec } from 'child_process';
 import 'dotenv/config';
 
 const bot = new Telegraf(process.env.TOKEN);
-const PORT = process.env.PORT || 5000;
-const URL = process.env.URL;
+// const PORT = process.env.PORT || 5000;
+// const URL = process.env.URL;
 
 bot.start((ctx) => ctx.reply('ку'));
 bot.hears('Turn off', (ctx) => {
@@ -15,7 +15,7 @@ bot.on('message', (msg) => {
   let discord = 'discord';
   let steam = 'steam';
   let lol = 'lol';
-  if (msg.message.text.toString().toLowerCase().includes(discord)) {
+  if (msg.message.text.toLowerCase().includes(discord)) {
     exec(
       'C:\\Users\\nabat\\AppData\\Local\\Discord\\Update.exe --processStart Discord.exe'
     );
@@ -30,8 +30,8 @@ bot.on('message', (msg) => {
     msg.reply(`open ${lol} for ${msg.from.username} `);
   }
 });
-bot.telegram.setWebhook(`${URL}/bot${process.env.TOKEN}`);
-bot.startWebhook(`${URL}/bot${process.env.TOKEN}}`, null, PORT);
+// bot.telegram.setWebhook(`${URL}/bot${process.env.TOKEN}`);
+// bot.startWebhook(`${URL}/bot${process.env.TOKEN}}`, null, PORT);
 bot
   .launch()
   .then(() => {
