@@ -1,8 +1,6 @@
 import { Telegraf } from 'telegraf';
 import { exec } from 'child_process';
 import 'dotenv/config';
-<<<<<<< Updated upstream
-=======
 import express from 'express';
 
 const app = express();
@@ -16,7 +14,6 @@ app.listen(PORT,()=>{
     console.log('Server has been started');
 })
 
->>>>>>> Stashed changes
 
 const bot = new Telegraf(process.env.TOKEN);
 // const PORT = process.env.PORT || 5000;
